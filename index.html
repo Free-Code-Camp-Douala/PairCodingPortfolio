@@ -27,9 +27,14 @@
      <!--footer section-->
     <footer>
       <p>
-        The FreecodeCamp Portfolio Douala copyright &copy; 2019 by M. Legrand
-        &and; Herve
+          The FreeCodeCamp Douala Community Portfolio copyright &copy; <span id="date"></span> by M. Legrand
+        &amp; Herve
       </p>
     </footer>
+    <script>
+      var now = new Date();
+      var annee = now.getFullYear();
+      document.getElementById('date').innerHTML=annee;
+    </script>
   </body>
 </html>
